@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+    dtest:
+        build:
+          context: .    
+          dockerfile: Dockerfile      
+          args:
+            user: ${user}
+            password: ${password}
+                #${user}
+                #     password: "${password}"
